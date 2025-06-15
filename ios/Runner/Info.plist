@@ -29,9 +29,9 @@
 		<key>UIMainStoryboardFile</key>
 		<string>Main</string>
 		<key>NSCameraUsageDescription</key>
-		<string>Potrzebujemy dostêpu do kamery do skanowania QR kodów.</string>
+		<string>Potrzebujemy dostepu do kamery do skanowania QR kodow.</string>
 		<key>NSPhotoLibraryUsageDescription</key>
-		<string>Potrzebujemy dostêpu do zdjêæ w razie potrzeby zapisu dokumentacji.</string>
+		<string>Potrzebujemy dostepu do zdjec w razie potrzeby zapisu dokumentacji.</string>
 		<key>UISupportedInterfaceOrientations</key>
 		<array>
 			<string>UIInterfaceOrientationPortrait</string>
