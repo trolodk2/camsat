@@ -15,7 +15,7 @@ workflows:
       - name: Build iOS
         script: |
           flutter build ipa --release --no-codesign
-					- name: Export .ipa manually
+      - name: Export .ipa manually
         script: |
           xcodebuild -exportArchive \
             -archivePath build/ios/archive/Runner.xcarchive \
