@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+import 'screens/start_page.dart';
+
+void main() {
+  runApp(KlimaApp());
+}
+
+class KlimaApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'CAM-SAT Gwarancje',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      home: StartPage(),
+    );
+  }
+}

@@ -1,0 +1,4 @@
+#Sun Jun 01 17:54:36 CEST 2025
+base.0=C\:\\Users\\trolo\\klima_test\\klima_test\\android\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
