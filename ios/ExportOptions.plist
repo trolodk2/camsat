@@ -4,8 +4,10 @@
 <dict>
   <key>method</key>
   <string>ad-hoc</string>
+  <key>teamID</key>
+  <string>NXBZP9D9M7</string>
   <key>signingStyle</key>
-  <string>manual</string>
+  <string>automatic</string>
   <key>stripSwiftSymbols</key>
   <true/>
   <key>compileBitcode</key>
