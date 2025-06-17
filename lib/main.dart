@@ -18,20 +18,25 @@ Future<void> main() async {
   bool firebaseOK = true;
 
   try {
-    print(" Lista aplikacji Firebase przed inicjalizacj¹:");
+    print(" Lista aplikacji Firebase przed inicjalizacja:");
     Firebase.apps.forEach((app) => print(" ? ${app.name}"));
 
     if (Firebase.apps.isEmpty) {
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
       );
-      print("? Firebase zainicjalizowany rêcznie");
+      print("? Firebase zainicjalizowany recznie");
     } else {
-      print("?? Firebase ju¿ by³ zainicjalizowany – pomijam.");
+      print("?? Firebase juz byl zainicjalizowany > pomijam.");
+    }
+    final settings = await FirebaseMessaging.instance.requestPermission();
+    print('ğŸ”” Uprawnienia do pushy: ${settings.authorizationStatus}');
+    if (settings.authorizationStatus == AuthorizationStatus.denied) {
+      print('âŒ Uzytkownik nie wyrazil zgody na powiadomienia push.');
     }
 
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-      print("?? Klikniêto powiadomienie!");
+      print("?? Kliknij to powiadomienie!");
 
       final typ = message.data['typ'];
       final idZadania = message.data['id_zadania'];
@@ -50,7 +55,7 @@ Future<void> main() async {
 
   } catch (e, stack) {
     firebaseOK = false;
-    print("? B³¹d przy Firebase.initializeApp(): $e");
+    print("X Blad przy Firebase.initializeApp(): $e");
     print(stack);
   }
 
