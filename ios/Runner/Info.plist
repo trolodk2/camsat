@@ -53,5 +53,10 @@
 		<false/>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
+		<key>NSFaceIDUsageDescription</key>
+		<string>U¿ywamy Face ID do bezpiecznego logowania u¿ytkownika.</string>
+		<key>NSLocalAuthenticationUsageDescription</key>
+		<string>Uwierzytelnianie biometryczne s³u¿y do szybkiego logowania bez has³a.</string>
+
 	</dict>
 </plist>
