@@ -92,9 +92,16 @@ class _StartPageSerwisantState extends State<StartPageSerwisant> {
           children: [
             Icon(icon, size: 28, color: Colors.white),
             SizedBox(width: 12),
-            Flexible(
-              child: Text(text, style: TextStyle(fontSize: 18, color: Colors.white)),
-            ),
+            Expanded(
+						  child: Text(
+						    text,
+						    style: TextStyle(fontSize: 18, color: Colors.white),
+						    maxLines: 1,
+						    overflow: TextOverflow.ellipsis,
+						    textAlign: TextAlign.left,
+						    textScaleFactor: 1.0,
+						  ),
+						),
           ],
         ),
       ),
