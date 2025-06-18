@@ -5,7 +5,7 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleDisplayName</key>
-		<string>Klima Test</string>
+		<string>CAM-SAT</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
@@ -54,9 +54,9 @@
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
 		<key>NSFaceIDUsageDescription</key>
-		<string>U�ywamy Face ID do bezpiecznego logowania u�ytkownika.</string>
+		<string>Używamy Face ID do bezpiecznego logowania użytkownika.</string>
 		<key>NSLocalAuthenticationUsageDescription</key>
-		<string>Uwierzytelnianie biometryczne s�u�y do szybkiego logowania bez has�a.</string>
+		<string>Uwierzytelnianie biometryczne służy do szybkiego logowania bez hasła.</string>
 
 	</dict>
 </plist>
