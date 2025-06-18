@@ -120,31 +120,39 @@ void initState() {
   }
 
   Widget _buildButton({
-    required IconData icon,
-    required String text,
-    required VoidCallback onPressed,
-  }) {
-    return SizedBox(
-      width: 260,
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: przyciskKolor,
-          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-        ),
-        onPressed: onPressed,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            Icon(icon, size: 28, color: Colors.white),
-            SizedBox(width: 12),
-            Flexible(
-              child: Text(text, style: TextStyle(fontSize: 18, color: Colors.white)),
-            ),
-          ],
-        ),
+  required IconData icon,
+  required String text,
+  required VoidCallback onPressed,
+}) {
+  return SizedBox(
+    width: 260,
+    child: ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: przyciskKolor,
+        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
-    );
-  }
+      onPressed: onPressed,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Icon(icon, size: 28, color: Colors.white),
+          SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              text,
+              style: TextStyle(fontSize: 18, color: Colors.white),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.left,
+              textScaleFactor: 1.0,
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
+}
+
 }
