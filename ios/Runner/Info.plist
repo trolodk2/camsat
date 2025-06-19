@@ -57,6 +57,9 @@
 		<string>Używamy Face ID do bezpiecznego logowania użytkownika.</string>
 		<key>NSLocalAuthenticationUsageDescription</key>
 		<string>Uwierzytelnianie biometryczne służy do szybkiego logowania bez hasła.</string>
-
+		<key>UIBackgroundModes</key>
+		<array>
+		  <string>remote-notification</string>
+		</array>
 	</dict>
 </plist>
